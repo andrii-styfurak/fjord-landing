@@ -1,0 +1,98 @@
+.iphone-slider {
+  padding: 77px 0 46px;
+  perspective: 10000px;
+  transition: background-color 1s ease;
+
+  &__container {
+    position: relative;
+  }
+
+  &__wrapper {
+    width: 405px;
+    position: relative;
+    margin-left: -144px;
+    &:before {
+      content: "";
+      display: block;
+      width: 953px;
+      height: 776px;
+      position: relative;
+      z-index: 7;
+      pointer-events: none;
+    }
+  }
+
+  .glide {
+    transform: scale(0.98) scaleZ(1) rotate(0deg) rotateX(36deg) rotate(-43.3deg) translateX(-173px) translateY(290px);
+    transform: scale(1) scaleZ(1) rotate(0deg) rotateX(35deg) rotate(-43.3deg) translateX(-185px) translateY(273px);
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    &__img {
+      display: block;
+      height: 720px;
+      width: 100%;
+      background: #7df0f0;
+    }
+    &__slide {
+      background: #fff;
+    }
+    &__track {
+      z-index: 9;
+      position: relative;
+    }
+    &__arrows {
+      position: absolute;
+      z-index: 5;
+      top: 44%;
+      left: -121px;
+      right: -91px;
+      display: flex;
+      justify-content: space-between;
+      transform: scale(1.15);
+    }
+  }
+
+  &__card {
+    width: 386px;
+    position: absolute;
+    top: 41px;
+    right: -80px;
+    z-index: 11;
+    &-btn {
+      border-radius: 0 0 2px 2px;
+      display: block;
+    }
+  }
+
+  &__list {
+    padding: 40px 39px 54px 33px;
+    background: #fff;
+    border-radius: 2px 2px 0 0;
+  }
+
+  &__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 44px;
+    }
+    &-icon {
+      width: 60px;
+      min-width: 60px;
+      height: 60px;
+      margin-right: 24px;
+    }
+    &-title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 15px;
+      margin-top: 9px;
+      font-weight: bold;
+    }
+    &-text {
+      color: #8e9098;
+    }
+  }
+}

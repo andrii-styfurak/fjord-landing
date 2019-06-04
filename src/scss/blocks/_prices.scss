@@ -1,0 +1,46 @@
+.prices {
+  padding: 77px 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 40px 47px;
+    &-name {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      font-weight: bold;
+    }
+    &-price {
+      font-size: 50px;
+      line-height: 1;
+      font-family: $ff-bold;
+      margin: 40px 0 31px;
+      letter-spacing: 1px;
+    }
+    &-text {
+      margin-bottom: 23px;
+      color: #8e9098;
+    }
+    &-btn {
+      margin-top: auto;
+    }
+    &--black {
+      background: $black;
+      border-radius: 2px;
+      margin: 0 24px;
+      color: #fff;
+    }
+    &--black &-text {
+      color: transparentize(#fff, .5);
+    }
+  }
+}

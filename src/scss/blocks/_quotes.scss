@@ -1,0 +1,61 @@
+.quotes {
+  margin: 18px 0;
+
+  &__block {
+    background: #fff;
+    padding: 76px 114px 64px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 795px;
+    border-radius: 2px;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 17px;
+    }
+    &:before {
+      top: 40px;
+      left: 38px;
+    }
+    &:after {
+      bottom: 47px;
+      right: 43px;
+      transform: rotate(180deg);
+    }
+    &-text {
+      font-family: $ff-title;
+      font-size: 42px;
+      line-height: 51px;
+      text-align: center;
+    }
+    &-tip {
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 18px;
+      letter-spacing: .4px;
+      font-weight: bold;
+    }
+  }
+
+  .glide {
+    &__arrows {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+    &__arrow {
+      width: calc((100vw - 795px - 24px * 2) / 2);
+      background: transparent;
+      pointer-events: all;
+    }
+  }
+}

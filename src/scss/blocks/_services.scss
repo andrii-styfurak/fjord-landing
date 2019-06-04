@@ -1,0 +1,41 @@
+.services {
+  padding: 0;
+  margin-top: -11px;
+  margin-bottom: 112px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+
+    &-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 23px;
+    }
+    &-title {
+      margin: auto 0;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &-badge {
+      margin-left: 4px;
+      position: relative;
+      top: -2px;
+      text-shadow: none;
+    }
+    &-text {
+      margin: 22px 0 7px;
+      color: #8e9098;
+      padding: 0 13px;
+    }
+  }
+}

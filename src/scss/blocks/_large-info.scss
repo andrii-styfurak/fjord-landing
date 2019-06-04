@@ -1,0 +1,23 @@
+.large-info {
+  padding: 113px 15px 103px;
+  text-align: center;
+  background: #fff;
+
+  &--single-title {
+    padding: 87px 15px 86px;
+  }
+
+  &__title {
+    font-family: $ff-title;
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 49px auto 0;
+    max-width: 460px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,73 @@
+.ipad-slider {
+  position: relative;
+  margin-bottom: 206px;
+
+  &__block {
+    border-radius: 2px;
+    background: $black;
+    padding: 117px 101px 130px;
+    margin: 0 -187px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    right: 0;
+    top: 265px;
+    z-index: 7;
+    &:before {
+      content: "";
+      display: block;
+      width: 815px;
+      height: 741px;
+      position: relative;
+      z-index: 7;
+      pointer-events: none;
+    }
+  }
+
+  .glide {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 687px;
+    z-index: 3;
+    &__img {
+      display: block;
+      height: 582px;
+      width: 100%;
+      background: #1f1f1f;
+    }
+    &__slide {
+      background: #fff;
+    }
+    &__track {
+      z-index: 9;
+      position: relative;
+    }
+    &__arrows {
+      position: absolute;
+      z-index: 5;
+      top: 44%;
+      left: -206px;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-family: $ff-title;
+    font-size: 72px;
+    line-height: 80px;
+    color: #fff;
+    margin-left: -6px;
+  }
+  &__text {
+    color: transparentize(#fff, .5);
+    max-width: 420px;
+    margin-top: 45px;
+  }
+  &__btn {
+    margin-top: 160px;
+  }
+}

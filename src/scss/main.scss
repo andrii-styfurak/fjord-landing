@@ -1,0 +1,23 @@
+@import "vendor/reset";
+
+@import "vars";
+// @import "fonts";
+@import "base";
+
+@import "components/btn";
+@import "components/badge";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/services";
+@import "blocks/iphone-slider";
+@import "blocks/large-info";
+@import "blocks/features";
+@import "blocks/ipad-slider";
+@import "blocks/full-features";
+@import "blocks/quotes";
+@import "blocks/gallery";
+@import "blocks/prices";
+@import "blocks/footer";
+
+@import "vendor/glide";

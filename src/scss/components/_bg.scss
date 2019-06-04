@@ -1,0 +1,19 @@
+.hero {
+  background: #eff2f7 url("../img/hero-bg.jpg") no-repeat center / cover;
+}
+
+.iphone-slider__wrapper:before {
+  background: url("../img/iphone-slider-bg.png")
+}
+
+.ipad-slider__wrapper:before {
+  background: url("../img/ipad-slider-bg.png")
+}
+
+.footer {
+  background: #f5f6f8 url("../img/footer-bg.jpg") no-repeat center 100px / cover;
+}
+
+.footer-info__text:after {
+  background: url("../img/footer-text-bg.png");
+}
